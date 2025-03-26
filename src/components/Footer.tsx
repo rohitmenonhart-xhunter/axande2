@@ -44,7 +44,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   className="text-gray-400 hover:text-white transition duration-300 text-sm flex items-center group"
                 >
                   <ArrowRight size={16} className="mr-2 transition duration-300 transform group-hover:translate-x-1" />
-                  À Propos de Nous
+                  Accueil
                 </button>
               </li>
               <li>
@@ -53,16 +53,16 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   className="text-gray-400 hover:text-white transition duration-300 text-sm flex items-center group"
                 >
                   <ArrowRight size={16} className="mr-2 transition duration-300 transform group-hover:translate-x-1" />
-                  Nos Solutions
+                  Solutions
                 </button>
               </li>
               <li>
                 <button 
-                  onClick={() => onNavigate('nebulas')} 
+                  onClick={() => onNavigate('join')} 
                   className="text-gray-400 hover:text-white transition duration-300 text-sm flex items-center group"
                 >
                   <ArrowRight size={16} className="mr-2 transition duration-300 transform group-hover:translate-x-1" />
-                  Nebulas.ai
+                  Rejoindre
                 </button>
               </li>
               <li>
@@ -77,58 +77,60 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </ul>
           </div>
           
-          {/* Solutions */}
+          {/* More Links */}
           <div>
-            <h4 className="text-white text-lg font-medium mb-4">Nos Solutions</h4>
+            <h4 className="text-white text-lg font-medium mb-4">Ressources</h4>
             <ul className="space-y-2">
               <li>
-                <button className="text-gray-400 hover:text-white transition duration-300 text-sm flex items-center group">
+                <a href="#" className="text-gray-400 hover:text-white transition duration-300 text-sm flex items-center group">
                   <ArrowRight size={16} className="mr-2 transition duration-300 transform group-hover:translate-x-1" />
-                  Traitement du Langage Naturel
-                </button>
+                  Charte de la diversité
+                </a>
               </li>
               <li>
-                <button className="text-gray-400 hover:text-white transition duration-300 text-sm flex items-center group">
+                <a href="#" className="text-gray-400 hover:text-white transition duration-300 text-sm flex items-center group">
                   <ArrowRight size={16} className="mr-2 transition duration-300 transform group-hover:translate-x-1" />
-                  Computer Vision
-                </button>
+                  Offres d'Emploi
+                </a>
               </li>
               <li>
-                <button className="text-gray-400 hover:text-white transition duration-300 text-sm flex items-center group">
+                <a href="#" className="text-gray-400 hover:text-white transition duration-300 text-sm flex items-center group">
                   <ArrowRight size={16} className="mr-2 transition duration-300 transform group-hover:translate-x-1" />
-                  Analyse Prédictive
-                </button>
+                  Jobboard
+                </a>
               </li>
               <li>
-                <button className="text-gray-400 hover:text-white transition duration-300 text-sm flex items-center group">
+                <a href="#" className="text-gray-400 hover:text-white transition duration-300 text-sm flex items-center group">
                   <ArrowRight size={16} className="mr-2 transition duration-300 transform group-hover:translate-x-1" />
-                  Automatisation des Processus
-                </button>
+                  La charte d'entreprise citoyenne
+                </a>
               </li>
             </ul>
           </div>
           
-          {/* Newsletter */}
+          {/* Social and Other Links */}
           <div>
-            <h4 className="text-white text-lg font-medium mb-4">Notre Newsletter</h4>
-            <p className="text-gray-400 text-sm mb-4">
-              Inscrivez-vous pour recevoir toutes nos actualités et offres.
-            </p>
-            <form className="space-y-3">
-              <div>
-                <input 
-                  type="email" 
-                  placeholder="Votre adresse e-mail" 
-                  className="w-full px-4 py-2 bg-gray-800 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-white text-sm"
-                />
-              </div>
-              <button 
-                type="submit" 
-                className="bg-blue-600 hover:bg-blue-700 transition duration-300 text-white px-4 py-2 rounded text-sm font-medium"
-              >
-                S'inscrire
-              </button>
-            </form>
+            <h4 className="text-white text-lg font-medium mb-4">Suivez-nous</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition duration-300 text-sm flex items-center group">
+                  <ArrowRight size={16} className="mr-2 transition duration-300 transform group-hover:translate-x-1" />
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-gray-400 hover:text-white transition duration-300 text-sm flex items-center group">
+                  <ArrowRight size={16} className="mr-2 transition duration-300 transform group-hover:translate-x-1" />
+                  Extranet
+                </a>
+              </li>
+              <li>
+                <a href="https://www.abs-technologies.fr/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition duration-300 text-sm flex items-center group">
+                  <ArrowRight size={16} className="mr-2 transition duration-300 transform group-hover:translate-x-1" />
+                  ABS Technologies
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         
@@ -136,7 +138,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         <div className="pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm mb-4 md:mb-0">
-              &copy; {currentYear} Axande. Tous droits réservés.
+              &copy; {currentYear} Axande une ESN au service de votre transformation digitale
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-500 hover:text-white transition duration-300">

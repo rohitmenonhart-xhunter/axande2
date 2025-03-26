@@ -16,7 +16,7 @@ const Diversity: React.FC = () => {
                 <span className="text-gradient-blue">AXANDE</span>
               </h2>
               <p className="text-xl text-gray-600 font-light mb-8">
-                Le groupe ABE est signataire de la charte sur la diversité
+                Le groupe ABS est signataire de la charte sur la diversité
               </p>
             </div>
           </ScrollAnimation>
@@ -38,27 +38,17 @@ const Diversity: React.FC = () => {
                     Les collaborateurs constituent la principale richesse de l'entreprise.
                   </p>
                   <p className="text-gray-600">
-                    AXANDE connait tous ses talents mais notre culture gagne plus de "Richesse" grâce à notre engagement en faveur de la diversité.
+                    Axande recrute tous ses talents sans autre critère que celui de l'excellence.
                   </p>
                 </div>
                 
                 <div className="md:w-1/2 md:pl-8 md:border-l border-gray-200">
-                  <div className="flex flex-col items-start space-y-4">
-                    <h4 className="text-xl font-bold text-gray-800">Nos engagements:</h4>
-                    {[
-                      "Sensibiliser et former nos dirigeants impliqués dans le recrutement",
-                      "Respecter et promouvoir l'application du principe de non-discrimination",
-                      "Chercher à refléter la diversité de la société",
-                      "Communiquer nos engagements auprès de l'ensemble de nos collaborateurs",
-                      "Faire de l'élaboration et de la mise en œuvre de la politique de diversité un objet de dialogue"
-                    ].map((point, index) => (
-                      <div key={index} className="flex items-start">
-                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mt-0.5 mr-3 flex-shrink-0">
-                          <span className="text-blue-600 font-bold text-sm">{index + 1}</span>
-                        </div>
-                        <p className="text-gray-700">{point}</p>
-                      </div>
-                    ))}
+                  <div className="flex justify-center">
+                    <img 
+                      src="https://www.axande.fr/wp-content/uploads/2022/12/charte-diversite-logopng-1.png" 
+                      alt="Charte de la diversité" 
+                      className="h-32"
+                    />
                   </div>
                 </div>
               </div>

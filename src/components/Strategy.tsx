@@ -33,27 +33,27 @@ const Strategy: React.FC = () => {
   const strategies = [
     {
       title: "Data",
-      description: "Nous aidons les entreprises à transformer leurs données en insights stratégiques grâce à nos solutions d'analyse avancées.",
+      description: "Nous vous accompagnons dans le traitement de vos données pour une meilleure prise de décision.",
       icon: <Database size={24} />,
     },
     {
       title: "ERP",
-      description: "Optimisez vos processus d'entreprise avec nos solutions ERP entièrement intégrées et personnalisées.",
+      description: "Solutions de gestion d'entreprise intégrées pour optimiser vos processus métier.",
       icon: <Server size={24} />,
     },
     {
       title: "CRM",
-      description: "Améliorez vos relations clients et augmentez votre chiffre d'affaires avec nos plateformes CRM innovantes.",
+      description: "Gérez efficacement vos relations clients pour développer votre activité.",
       icon: <Users size={24} />,
     },
     {
       title: "Support",
-      description: "Notre équipe d'experts vous accompagne à chaque étape pour garantir le succès de votre transformation digitale.",
+      description: "Transformation des fonctions support pour améliorer l'efficacité de votre entreprise.",
       icon: <Globe size={24} />,
     },
     {
       title: "Business Intelligence",
-      description: "Prenez des décisions éclairées grâce à nos outils de business intelligence qui transforment les données complexes en visualisations claires.",
+      description: "Prenez des décisions éclairées grâce à nos outils de BI qui transforment les données complexes en visualisations claires.",
       icon: <BarChart3 size={24} />,
     },
     {
@@ -76,14 +76,11 @@ const Strategy: React.FC = () => {
             <div className="md:w-2/3">
               <h3 className="section-subtitle">Une forte valeur ajoutée sur vos projets</h3>
               <p className="text-gray-600 mb-4 text-lg">
-                Avec un réel attrait technique sur la <strong className="text-blue-600">DATA</strong>, 
-                les <strong className="text-blue-600">ERP</strong>, 
-                les solutions <strong className="text-blue-600">CRM</strong> et la 
+                Que ce soit dans les domaines de la <strong className="text-blue-600">DATA</strong>, 
+                des <strong className="text-blue-600">ERP</strong>, 
+                des solutions <strong className="text-blue-600">CRM</strong> et de la 
                 transformation des fonctions <strong className="text-blue-600">SUPPORT</strong>, 
-                nous accompagnons nos clients depuis plus de 20 ans.
-              </p>
-              <p className="text-gray-600 text-lg">
-                Notre objectif est de vous aider à atteindre l'excellence opérationnelle grâce à des solutions innovantes et adaptées à vos besoins.
+                nous accompagnons nos clients depuis plus de 20 ans…
               </p>
             </div>
           </div>

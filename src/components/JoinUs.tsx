@@ -91,7 +91,9 @@ const JoinUs: React.FC = () => {
               <span className="block mt-2 text-gray-800">une équipe dynamique</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Développez votre carrière au sein d'une entreprise innovante et centrée sur l'humain
+              Vous cherchez à relever de nouveaux challenges ?<br/>
+              Les projets informatiques liés à la DATA / ERP / CRM / BI vous passionnent ?<br/>
+              Venez renforcer nos équipes et acquérir de nouvelles compétences...
             </p>
           </div>
         </ScrollAnimation>
@@ -148,15 +150,13 @@ const JoinUs: React.FC = () => {
           </ScrollAnimation>
         </div>
         
-        <ScrollAnimation animation="fade-in" delay={300} className="text-center">
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Vous cherchez à relever de nouveaux challenges ? Les projets informatiques liés à la
-            DATA / ERP / CRM / BI vous passionnent ?
-          </p>
-          <button className="btn btn-primary">
-            Déposez votre candidature spontanée
-          </button>
-        </ScrollAnimation>
+        <div className="flex justify-center">
+          <ScrollAnimation animation="fade-in" delay={300} className="text-center">
+            <button className="btn btn-primary">
+              En savoir plus
+            </button>
+          </ScrollAnimation>
+        </div>
       </div>
     </section>
   );

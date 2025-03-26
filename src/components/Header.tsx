@@ -20,10 +20,13 @@ const Header: React.FC<HeaderProps> = ({ onNavigate, activePage }) => {
   }, []);
 
   const menuItems = [
-    { label: 'À Propos de Nous', page: 'home' },
+    { label: 'Accueil', page: 'home' },
     { label: 'Solutions', page: 'solutions' },
-    { label: 'Nebulas.ai', page: 'nebulas' },
-    { label: 'Carrières', page: 'join' },
+    { label: 'Rejoindre', page: 'join' },
+    { label: 'Jobboard', page: 'jobboard' },
+    { label: 'Actualités', page: 'news' },
+    { label: 'Contact', page: 'contact' },
+    { label: 'Site groupe', page: 'groupe', external: true, url: 'https://www.abs-technologies.fr/' }
   ];
 
   return (
@@ -50,10 +53,14 @@ const Header: React.FC<HeaderProps> = ({ onNavigate, activePage }) => {
             {menuItems.map((item, index) => (
               <a 
                 key={index}
-                href="#" 
+                href={item.external ? item.url : "#"} 
+                target={item.external ? "_blank" : undefined}
+                rel={item.external ? "noopener noreferrer" : undefined}
                 onClick={(e) => {
-                  e.preventDefault();
-                  onNavigate(item.page);
+                  if (!item.external) {
+                    e.preventDefault();
+                    onNavigate(item.page);
+                  }
                 }}
                 className={`text-gray-800 font-medium transition-all duration-300 relative group text-base ${
                   activePage === item.page 
@@ -90,11 +97,15 @@ const Header: React.FC<HeaderProps> = ({ onNavigate, activePage }) => {
         {menuItems.map((item, index) => (
           <a 
             key={index}
-            href="#" 
+            href={item.external ? item.url : "#"}
+            target={item.external ? "_blank" : undefined}
+            rel={item.external ? "noopener noreferrer" : undefined}
             onClick={(e) => {
-              e.preventDefault();
-              onNavigate(item.page);
-              setMobileMenuOpen(false);
+              if (!item.external) {
+                e.preventDefault();
+                onNavigate(item.page);
+                setMobileMenuOpen(false);
+              }
             }}
             className={`block py-2 text-gray-700 font-medium hover:text-gray-900 transition-all duration-300 border-b border-gray-100 text-base ${
               activePage === item.page ? 'text-gray-900 font-semibold' : ''

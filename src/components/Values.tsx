@@ -37,7 +37,7 @@ const Values: React.FC = () => {
   const valueItems = [
     {
       title: "L'EXCELLENCE",
-      description: "Nos consultants sont formés aux méthodes et aux technologies les plus innovantes et s'engagent à délivrer une expertise technique et fonctionnelle de haute qualité. Nous avons la plus grande exigence sur notre savoir-être et notre savoir-faire technique, que nous continuons à développer au quotidien.",
+      description: "Nos collaborateurs constituent le moteur de notre entreprise et de nos ambitions. Leur formation et niveau de compétence est un axe majeur de notre stratégie d'entreprise. Nous avons la plus ferme volonté de préserver une grande expertise sur notre domaine, qui reste en constante évolution.",
       icon: <Award size={36} strokeWidth={1.5} />
     },
     {
@@ -47,7 +47,7 @@ const Values: React.FC = () => {
     },
     {
       title: "LA PROXIMITÉ",
-      description: "Notre structure favorise une grande proximité avec votre entreprise et vos collaborateurs afin de mieux comprendre vos enjeux et vos interactions. Nous mettons en place des consultants performants qui travaillent en proximité et se voient communiquer la culture d'entreprise que nous défendons.",
+      description: "Notre cherchons toujours une grande proximité avec votre entreprise et ses collaborateurs afin de mieux comprendre les enjeux qui vous préoccupent. Notre ambition est d'être des partenaires pertinents, force de proposition et de vous accompagner efficacement dans votre stratégie sur le long terme.",
       icon: <Users size={36} strokeWidth={1.5} />
     }
   ];

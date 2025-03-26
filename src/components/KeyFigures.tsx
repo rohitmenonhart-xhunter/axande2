@@ -42,7 +42,7 @@ const KeyFigures: React.FC<KeyFiguresProps> = ({ onNavigate }) => {
     },
     {
       icon: <Users size={36} strokeWidth={1.5} />,
-      value: "148+",
+      value: "148",
       description: "consultants passionnés à votre service."
     }
   ];
@@ -70,11 +70,10 @@ const KeyFigures: React.FC<KeyFiguresProps> = ({ onNavigate }) => {
             <div className="md:w-7/12">
               <ScrollAnimation animation="fade-in" delay={200}>
                 <h3 className="text-2xl font-medium mb-4 text-blue-600">
-                  Axande réalise un chiffre d'affaires de 3.8 M€ en 2021
+                  Axande réalise un chiffre d'affaires de 3,8 M€ en 2021
                 </h3>
                 <p className="text-gray-600 text-lg">
-                  Découvrez les chiffres qui témoignent de notre croissance et de notre
-                  expertise dans le domaine de la transformation digitale.
+                  Le groupe ABS
                 </p>
               </ScrollAnimation>
             </div>

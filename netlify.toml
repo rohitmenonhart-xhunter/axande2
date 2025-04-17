@@ -3,6 +3,11 @@
   command = "npm run build"
 
 [[redirects]]
+  from = "/subsite/*"
+  to = "/subsite/index.html"
+  status = 200
+
+[[redirects]]
   from = "/*"
   to = "/subsite/index.html"
   status = 200

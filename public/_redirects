@@ -1,0 +1,5 @@
+# Redirect all root requests to /subsite/
+/ /subsite/ 301
+
+# Handle 404s for /subsite/ paths
+/subsite/* /subsite/index.html 200

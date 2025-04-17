@@ -1,5 +1,8 @@
-# Redirect all root requests to /subsite/
-/ /subsite/ 301
+# Handle SPA routing for /subsite/ paths
+/subsite/*  /subsite/index.html  200
 
-# Handle 404s for /subsite/ paths
-/subsite/* /subsite/index.html 200
+# Redirect root to placeholder
+/  /root-placeholder.html  200
+
+# All other paths return 404
+/*  /404.html  404

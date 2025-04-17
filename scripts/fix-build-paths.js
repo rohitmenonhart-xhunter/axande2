@@ -112,6 +112,24 @@ if (fs.existsSync(indexHtmlPath)) {
   console.log(indexContent);
 }
 
+// Copy the root placeholder file if it exists
+const rootPlaceholderSrc = path.join(publicDir, 'root-placeholder.html');
+const rootPlaceholderDest = path.join(distDir, 'root-placeholder.html');
+
+if (fs.existsSync(rootPlaceholderSrc)) {
+  fs.copyFileSync(rootPlaceholderSrc, rootPlaceholderDest);
+  console.log(`Copied root-placeholder.html to dist directory`);
+}
+
+// Copy the 404.html file if it exists
+const notFoundSrc = path.join(publicDir, '404.html');
+const notFoundDest = path.join(distDir, '404.html');
+
+if (fs.existsSync(notFoundSrc)) {
+  fs.copyFileSync(notFoundSrc, notFoundDest);
+  console.log(`Copied 404.html to dist directory`);
+}
+
 // Ensure logo files are in the subsite directory
 const logoFiles = ['logo.png', 'logo-white.png', 'logo-f.png'];
 for (const logoFile of logoFiles) {

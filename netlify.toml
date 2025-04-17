@@ -8,14 +8,14 @@
   to = "/subsite/index.html"
   status = 200
 
-# Redirect root to /subsite/
+# Prevent default redirect to SPA - redirect to a placeholder instead
 [[redirects]]
   from = "/"
-  to = "/subsite/"
-  status = 301
+  to = "/root-placeholder.html"
+  status = 200
 
-# Fallback for any other path
+# Prevent any other paths from accessing the SPA except /subsite
 [[redirects]]
   from = "/*"
-  to = "/subsite/index.html"
-  status = 200
+  to = "/root-placeholder.html"
+  status = 404
